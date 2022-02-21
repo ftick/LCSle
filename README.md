@@ -1,7 +1,7 @@
 # LCSle
-A LCS Wordle-like, found at [fake link](https://github.com/ftick/LCSle)
+An LCS Wordle-like, found at [fake link](https://github.com/ftick/LCSle)
 
-Player data based on [Mario Tormo Romero's Pokemon dataset](https://www.kaggle.com/mariotormo/complete-pokemon-dataset-updated-090420).
+Player data based on [Oracle's Elixir's dataset](https://oracleselixir.com/stats/players/byTournament).
 
 Pull requests welcome!
 ### Running Locally

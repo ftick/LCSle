@@ -10,9 +10,9 @@
 </head>     
 <body>
 
-<h2>Squirdle Daily</h2>
-<h3>A Pokémon Wordle-like by <a href="https://www.fireblend.com">Fireblend</a></h3>
-I'm thinking of a Pokémon. Guess which! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+<h2>LCSle Daily</h2>
+<h3>An LCS Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
+I'm thinking of an LCS Player. Guess which! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 <br>(Updates @ 00:00 GMT-10)
 <br><br>
 {% if data|length > 0 %}
@@ -60,11 +60,11 @@ I'm thinking of a Pokémon. Guess which! You have {{attempts}} guesses left toda
 
 {% if gameOver == 0 %}
 {% if error %}
-Pokemon not found!
+Player not found!
 {% endif %}
 <form autocomplete="off" method="POST">
   <div class="autocomplete">
-    <input id="guess" type="text" name="guess" placeholder="Pokemon Name">
+    <input id="guess" type="text" name="guess" placeholder="Player Name">
   </div>
   <input type="submit" value="Submit">
 </form>
@@ -85,8 +85,8 @@ Come back tomorrow for another daily!
 <br><a href="{{ url_for('index') }}">Back to regular Squirdle!</a>
 
 <script>
-var pokemon = {{pokemon | safe}};
-autocomplete(document.getElementById("guess"), pokemon);
+var player = {{player | safe}};
+autocomplete(document.getElementById("guess"), player);
 </script>
 
 </body>

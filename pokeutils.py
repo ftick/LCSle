@@ -6,12 +6,12 @@ def readPokedex(mingen=1, maxgen=8):
     dex = dex[(dex['generation'] <= int(maxgen)) & (dex['generation'] >= int(mingen))]
     return dex
 
-def getPokemon(mingen=1, maxgen=8, daily=False):
+def getPlayer(mingen=1, maxgen=8, daily=False):
     if daily:
         today = str(datetime.date(datetime.now()-timedelta(hours=10)))
         dex = np.recfromcsv("daily.csv", encoding="utf-8")
         row = dex[dex['date'] == today]
-        secret = row['pokemon'][0]
+        secret = row['player'][0]
     else:
         dex = readPokedex(mingen=1, maxgen=8)
         secret = np.random.choice(dex, 1)['name'][0]
@@ -26,9 +26,9 @@ def getDay(pkmn):
     dex = np.recfromcsv("daily.csv", encoding="utf-8")
     return list(dex['date']).index(today)
     
-def getPokeInfo(pokemon):
+def getPokeInfo(player):
     dex = readPokedex()
-    return dex[dex['name']==pokemon][0]
+    return dex[dex['name']==player][0]
 
 def getHint(guess_str, secret_str, daily=False):
     try:
@@ -56,12 +56,12 @@ def getHint(guess_str, secret_str, daily=False):
 def getHintMoji(hint):
     return "".join([val for x,val in hint.items()])
 
-def formatInfo(pokemon):
-    txt = f"<b>Gen:</b> {pokemon['generation']}<br>"
-    txt += f"<b>Type 1:</b> {pokemon['type_1']}<br>"
-    t2 = pokemon['type_2'] if pokemon['type_2'] != "" else "None"
+def formatInfo(player):
+    txt = f"<b>Gen:</b> {player['generation']}<br>"
+    txt += f"<b>Type 1:</b> {player['type_1']}<br>"
+    t2 = player['type_2'] if player['type_2'] != "" else "None"
     txt += f"<b>Type 2:</b> {t2}<br>"
-    txt += f"<b>Height:</b> {pokemon['height_m']} m<br>"
-    txt += f"<b>Weight:</b> {pokemon['weight_kg']} kg<br>"
+    txt += f"<b>Height:</b> {player['height_m']} m<br>"
+    txt += f"<b>Weight:</b> {player['weight_kg']} kg<br>"
 
     return txt

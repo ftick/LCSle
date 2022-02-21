@@ -5,10 +5,12 @@ from datetime import datetime, timedelta, date
 import requests
 import os
 
+from decouple import config
+
 app = Flask(__name__)
 
-API_KEY = os.environ['API_KEY']
-API_STATS_URL = os.environ['API_STATS_URL']
+API_KEY = config('API_KEY')
+API_STATS_URL = config('API_STATS_URL')
 
 def getCookieData(daily=""):
     prefix = ""
@@ -36,7 +38,7 @@ def getCookieData(daily=""):
 def handleGameOver(previousGuesses, gameOver, secret, attempts, daily, minGen, maxGen):
     if not API_KEY or not API_STATS_URL:
         return None
-    # Stat collecting: Sends guesses, secret pokemon, remaining attempts and whether it's a daily attempt to stats endpoint.
+    # Stat collecting: Sends guesses, secret player, remaining attempts and whether it's a daily attempt to stats endpoint.
     message = json.dumps({"guesses":[x['Guess'] for x in previousGuesses], "result":gameOver, 
                           "secret":secret, "attempts":attempts, "minGen":minGen, "maxGen":maxGen, "daily":daily, "timestamp":str(datetime.now())})
 
@@ -61,7 +63,7 @@ def index():
         resp.set_cookie('game_record', "[]")
         resp.set_cookie('min_gen', f"{mingen}")
         resp.set_cookie('max_gen', f"{maxgen}")
-        resp.set_cookie('secret', getPokemon(mingen=mingen, maxgen=maxgen))
+        resp.set_cookie('secret', getPlayer(mingen=mingen, maxgen=maxgen))
 
         guessesMap = {1:'5', 2:'5', 3:'6', 4:'6', 5:'7', 6:'7', 7:'8', 8:'8'}
 
@@ -79,7 +81,7 @@ def index():
         mosaic = f"Squirdle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
         mosaic_names = f"Squirdle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
     
-    return render_template("index.html", data=previousGuesses, gameOver=gameOver, mingen=minGen, maxgen=maxGen, pokemon=getPokeList(mingen=minGen, maxgen=maxGen), 
+    return render_template("index.html", data=previousGuesses, gameOver=gameOver, mingen=minGen, maxgen=maxGen, player=getPokeList(mingen=minGen, maxgen=maxGen), 
                             secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts)
 
 @app.route("/", methods=['POST'])
@@ -91,7 +93,7 @@ def guess():
             previousGuesses.append(getHint(request.form['guess'], secret))
             attempts -= 1
         else:
-            return render_template('index.html', data=previousGuesses, gameOver=gameOver, minGen=minGen, maxgen=maxGen, pokemon=getPokeList(mingen=minGen, maxgen=maxGen), 
+            return render_template('index.html', data=previousGuesses, gameOver=gameOver, minGen=minGen, maxgen=maxGen, player=getPokeList(mingen=minGen, maxgen=maxGen), 
                                     secret=secret, error=True, mosaic="", mosaic_names="", attempts=attempts)
 
         gameOver = 1 if previousGuesses[-1]["name"] == 1 else 2 if attempts <= 0 else 0
@@ -102,7 +104,7 @@ def guess():
     guesses = len(previousGuesses) if gameOver == 1 else 'X'
     mosaic = f"Squirdle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
     mosaic_names = f"Squirdle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
-    resp = make_response(render_template('index.html', data=previousGuesses, gameOver=gameOver, mingen=minGen, maxgen=maxGen, pokemon=getPokeList(mingen=minGen, maxgen=maxGen), 
+    resp = make_response(render_template('index.html', data=previousGuesses, gameOver=gameOver, mingen=minGen, maxgen=maxGen, player=getPokeList(mingen=minGen, maxgen=maxGen), 
                                           secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
 
     resp.set_cookie('game_record', json.dumps(previousGuesses))
@@ -116,7 +118,7 @@ def daily():
         resp = make_response(redirect(url_for('daily')))
         expire_date = datetime.combine(datetime.date(datetime.now()-timedelta(hours=10)), datetime.min.time())+timedelta(days=1, hours=10)
         resp.set_cookie('d_game_record', "[]", expires=expire_date)
-        resp.set_cookie('d_secret', getPokemon(daily=True), expires=expire_date)
+        resp.set_cookie('d_secret', getPlayer(daily=True), expires=expire_date)
         resp.set_cookie('d_attempts', '8', expires=expire_date)
         resp.set_cookie('d_max_gen', '8', expires=expire_date)
         resp.set_cookie('d_total_attempts', '8', expires=expire_date)
@@ -134,7 +136,7 @@ def daily():
         mosaic = f"Squirdle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
         mosaic_names = f"Squirdle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
 
-    return render_template("daily.html", data=previousGuesses, gameOver=gameOver, pokemon=getPokeList(), 
+    return render_template("daily.html", data=previousGuesses, gameOver=gameOver, player=getPokeList(), 
                             secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts)
 
 @app.route("/daily", methods=['POST'])
@@ -147,7 +149,7 @@ def dailyGuess():
             attempts -= 1
         else:
             mosaic = "\n".join([x['emoji'] for x in previousGuesses])
-            return render_template('daily.html', data=previousGuesses, gameOver=gameOver, pokemon=getPokeList(), secret=secret, error=True, mosaic=mosaic, attempts=attempts)
+            return render_template('daily.html', data=previousGuesses, gameOver=gameOver, player=getPokeList(), secret=secret, error=True, mosaic=mosaic, attempts=attempts)
 
         gameOver = 1 if previousGuesses[-1]["name"] == 1 else 2 if attempts <= 0 else 0
         if(gameOver):
@@ -160,7 +162,7 @@ def dailyGuess():
     mosaic = f"Squirdle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
     mosaic_names = f"Squirdle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
 
-    resp = make_response(render_template('daily.html', data=previousGuesses, gameOver=gameOver, pokemon=getPokeList(), 
+    resp = make_response(render_template('daily.html', data=previousGuesses, gameOver=gameOver, player=getPokeList(), 
                                           secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
                                           
     resp.set_cookie('d_game_record', json.dumps(previousGuesses))

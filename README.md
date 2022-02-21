@@ -1,5 +1,5 @@
-# LCSle
-An LCS Wordle-like, found at [fake link](https://github.com/ftick/LCSle)
+# Worldsle
+A LoL Worlds Wordle-like, found at [fake link](https://github.com/ftick/Worldsle)
 
 Player data based on [Oracle's Elixir's dataset](https://oracleselixir.com/stats/players/byTournament).
 

@@ -10,9 +10,9 @@
 </head>     
 <body>
 
-<h2>LCSle Daily</h2>
-<h3>An LCS Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
-I'm thinking of an LCS Player. Guess which! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+<h2>Worldsle Daily</h2>
+<h3>A LoL Worlds Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
+I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 <br>(Updates @ 00:00 GMT-10)
 <br><br>
 {% if data|length > 0 %}
@@ -82,7 +82,7 @@ The secret Pokémon was <b>{{secret}}</b>!<br>
 Generation hint arrows are obscured in daily<br>mosaics to avoid spoiling other players!<br><br>
 Come back tomorrow for another daily!
 {% endif %}
-<br><a href="{{ url_for('index') }}">Back to regular LCSle!</a>
+<br><a href="{{ url_for('index') }}">Back to regular Worldsle!</a>
 
 <script>
 var player = {{player | safe}};

@@ -10,9 +10,9 @@
 </head>     
 <body>
 
-<h2>LCSle</h2>
-<h3>An LCS Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
-I'm thinking of an LCS Player. Guess which! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+<h2>Worldsle</h2>
+<h3>A LoL Worlds Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
+I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 
 <br><br>
 {% if data|length > 0 %}
@@ -90,7 +90,7 @@ The secret Pokémon was <b>{{secret}}</b>!<br>
   <label for="quantity">to</label>
   <input class="mg_input" type="number" id="maxgen" name="maxgen" min="1" max="8" value="{{maxgen}}" oninput="validity.valid||(value='');"><br><br>
 </form>
-<br><a href="{{ url_for('daily') }}">Try Daily LCSle!</a>
+<br><a href="{{ url_for('daily') }}">Try Daily Worldsle!</a>
 
 <script>
 

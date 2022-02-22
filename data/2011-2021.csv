@@ -1,0 +1,594 @@
+record,name,year,debut,region,team,pos,gp,k
+-x--------x,Violet,2021,2012,OCE,PEACE,ADC,15,52
+--xxxxx-x-x,Faker,2021,2013,KR,T1,Middle,115,419
+--x-xxxx--x,Maple,2021,2013,PCS,PSG Talon,Middle,39,135
+---xxx-x-xx,Deft,2021,2014,KR,Hanwha Life Esports,ADC,70,283
+----xxxxxxx,Jensen,2021,2015,NA,Team Liquid,Middle,80,283
+----xxxx--x,Meiko,2021,2015,CN,EDward Gaming,Support,64,49
+----xx----x,Odoamne,2021,2015,EU,Rogue,Top,27,63
+----x----xx,Santorin,2021,2015,NA,Team Liquid,Jungle,19,32
+----x--x--x,Ssumday,2021,2015,NA,100 Thieves,Top,22,66
+----xxx---x,Zven,2021,2015,NA,Cloud9,ADC,43,151
+-----xxxxxx,CoreJJ,2021,2016,NA,Team Liquid,Support,61,55
+-----x----x,huhi,2021,2016,NA,100 Thieves,Support,12,37
+-----xxxxxx,Perkz,2021,2016,NA,Cloud9,Middle,86,316
+-----xxx-xx,Ruler,2021,2016,KR,Gen.G,ADC,64,221
+-----xxx--x,Scout,2021,2016,CN,EDward Gaming,Middle,51,186
+-----xxxx-x,Xiaohu,2021,2016,CN,Royal Never Give Up,Top,55,140
+------x--xx,Bdd,2021,2017,KR,Gen.G,Middle,34,109
+------xxx-x,Evi,2021,2017,LJL,DetonatioN FocusMe,Top,27,56
+------x--xx,Hans sama,2021,2017,EU,Rogue,ADC,26,94
+------x-xxx,Kaiwing,2021,2017,PCS,PSG Talon,Support,39,25
+------x-x-x,Khan,2021,2017,KR,DWG KIA,Top,41,151
+------xxx-x,Ming,2021,2017,CN,Royal Never Give Up,Support,45,32
+------x--xx,Rascal,2021,2017,KR,Gen.G,Top,23,65
+------x-xxx,Unified,2021,2017,PCS,PSG Talon,ADC,35,89
+------x---x,WhiteLotus,2021,2017,LAM,INFINITY,ADC,11,39
+-------xx-x,Blaber,2021,2018,NA,Cloud9,Jungle,28,96
+-------xxxx,Bwipo,2021,2018,EU,Fnatic,Jungle,40,112
+-------x-xx,Hanabi,2021,2018,PCS,PSG Talon,Top,24,68
+-------xxxx,Hylissang,2021,2018,EU,Fnatic,Support,44,37
+-------x--x,Liang,2021,2018,PCS,Beyond Gaming,Top,18,44
+-------x-xx,PK,2021,2018,PCS,Beyond Gaming,Top,24,38
+-------x--x,SolidSnake,2021,2018,LAM,INFINITY,Jungle,12,23
+-------xx-x,Steal,2021,2018,LJL,DetonatioN FocusMe,Jungle,23,40
+-------x--x,TitaN,2021,2018,BRL,RED Canids,ADC,14,48
+-------xx-x,Yutapon,2021,2018,LJL,DetonatioN FocusMe,ADC,23,79
+--------xxx,AHaHaCiK,2021,2019,CIS,Unicorns of Love.CIS,Jungle,30,78
+--------xxx,Armut,2021,2019,EU,MAD Lions,Top,31,98
+--------xxx,Babip,2021,2019,OCE,PEACE,Jungle,25,69
+--------xxx,BeryL,2021,2019,KR,DWG KIA,Support,54,59
+--------xxx,BOSS,2021,2019,CIS,Unicorns of Love.CIS,Top,30,97
+--------x-x,Buggax,2021,2019,LAM,INFINITY,Top,12,47
+--------xxx,Canyon,2021,2019,KR,DWG KIA,Jungle,64,193
+--------xxx,Chovy,2021,2019,KR,Hanwha Life Esports,Middle,37,87
+--------x-x,Closer,2021,2019,NA,100 Thieves,Jungle,14,32
+--------x-x,Doinb,2021,2019,CN,FunPlus Phoenix,Middle,25,91
+--------x-x,Fudge,2021,2019,NA,Cloud9,Top,23,70
+--------x--,Gaeng,2021,2019,LJL,DetonatioN FocusMe,Support,15,12
+--------xxx,Humanoid,2021,2019,EU,MAD Lions,Middle,41,149
+--------x-x,Lwx,2021,2019,CN,FunPlus Phoenix,ADC,25,131
+--------x-x,Nisqy,2021,2019,EU,Fnatic,Middle,12,29
+--------xxx,Nomanz,2021,2019,CIS,Unicorns of Love.CIS,Middle,30,111
+--------xxx,Nuguri,2021,2019,CN,FunPlus Phoenix,Top,42,106
+--------xxx,ShowMaker,2021,2019,KR,DWG KIA,Middle,54,216
+--------x-x,Tarzan,2021,2019,CN,LNG Esports,Jungle,22,70
+--------x-x,Tian,2021,2019,CN,FunPlus Phoenix,Jungle,25,81
+--------x-x,Viper,2021,2019,CN,EDward Gaming,ADC,32,127
+--------x-x,Vizicsacsi,2021,2019,OCE,PEACE,Top,32,81
+--------x-x,Vulcan,2021,2019,NA,Cloud9,Support,32,28
+---------xx,Bolulu,2021,2020,TRK,Galatasaray Esports,Middle,21,52
+---------xx,Carzzy,2021,2020,EU,MAD Lions,ADC,21,70
+---------xx,Ghost,2021,2020,KR,DWG KIA,ADC,36,138
+---------x-,Inspired,2021,2020,EU,Rogue,Jungle,14,41
+---------xx,Kaiser,2021,2020,EU,MAD Lions,Support,21,21
+---------xx,Keria,2021,2020,KR,T1,Support,23,20
+---------xx,Larssen,2021,2020,EU,Rogue,Middle,14,34
+---------xx,Life,2021,2020,KR,Gen.G,Support,25,29
+---------xx,River,2021,2020,PCS,PSG Talon,Jungle,12,26
+---------xx,SaNTaS,2021,2020,CIS,Unicorns of Love.CIS,Support,19,3
+---------xx,Tactical,2021,2020,NA,Team Liquid,ADC,18,54
+---------xx,Tally,2021,2020,OCE,PEACE,Middle,20,54
+----------x,Abbedagge,2021,2021,NA,100 Thieves,Middle,6,15
+----------x,Ackerman,2021,2021,LAM,INFINITY,Support,4,0
+----------x,Adam,2021,2021,EU,Fnatic,Top,6,26
+----------x,Aegis,2021,2021,BRL,RED Canids,Jungle,9,19
+----------x,Aladoric,2021,2021,OCE,PEACE,Support,12,9
+----------x,Ale,2021,2021,CN,LNG Esports,Top,11,50
+----------x,Alive,2021,2021,TRK,Galatasaray Esports,ADC,9,36
+----------x,Alphari,2021,2021,NA,Team Liquid,Top,7,19
+----------x,Argonavt,2021,2021,CIS,Unicorns of Love.CIS,ADC,5,7
+----------x,Aria,2021,2021,LJL,DetonatioN FocusMe,Middle,11,27
+----------x,Avenger,2021,2021,BRL,RED Canids,Middle,2,4
+----------x,BEAN,2021,2021,EU,Fnatic,ADC,6,24
+----------x,Burdol,2021,2021,KR,Gen.G,Top,3,10
+----------x,Canna,2021,2021,KR,T1,Top,14,37
+--------xxx,Clid,2021,2019,KR,Gen.G,Jungle,39,111
+----------x,cody,2021,2021,LAM,INFINITY,Middle,4,4
+----------x,Crazy,2021,2021,TRK,Galatasaray Esports,Top,9,26
+----------x,Crisp,2021,2021,CN,FunPlus Phoenix,Support,7,6
+----------x,Cryin,2021,2021,CN,Royal Never Give Up,Middle,12,31
+----------x,Doggo,2021,2021,PCS,Beyond Gaming,ADC,13,77
+----------x,Elyoya,2021,2021,EU,MAD Lions,Jungle,11,33
+----------x,FBI,2021,2021,NA,100 Thieves,ADC,6,23
+----------x,Flandre,2021,2021,CN,EDward Gaming,Top,21,56
+----------x,GALA,2021,2021,CN,Royal Never Give Up,ADC,12,51
+----------x,Grevthar,2021,2021,BRL,RED Canids,Middle,7,16
+----------x,Guigo,2021,2021,BRL,RED Canids,Top,9,22
+----------x,Gumayusi,2021,2021,KR,T1,ADC,14,49
+----------x,HuSha,2021,2021,PCS,Beyond Gaming,Jungle,13,43
+----------x,icon,2021,2021,CN,LNG Esports,Middle,11,36
+----------x,Iwandy,2021,2021,CN,LNG Esports,Support,4,3
+----------x,Jiejie,2021,2021,CN,EDward Gaming,Jungle,21,47
+----------x,Jojo,2021,2021,BRL,RED Canids,Support,9,6
+----------x,Kino,2021,2021,PCS,Beyond Gaming,Support,13,11
+----------x,Light,2021,2021,CN,LNG Esports,ADC,11,36
+----------x,Maoan,2021,2021,PCS,Beyond Gaming,Middle,10,29
+----------x,Mojito,2021,2021,TRK,Galatasaray Esports,Jungle,9,31
+----------x,Morgan,2021,2021,KR,Hanwha Life Esports,Top,17,37
+----------x,Oner,2021,2021,KR,T1,Jungle,14,44
+----------x,Trymbi,2021,2021,EU,Rogue,Support,8,6
+----------x,Vsta,2021,2021,KR,Hanwha Life Esports,Support,17,14
+----------x,Wei,2021,2021,CN,Royal Never Give Up,Jungle,12,53
+----------x,Willer,2021,2021,KR,Hanwha Life Esports,Jungle,17,60
+----------x,Zergsting,2021,2021,TRK,Galatasaray Esports,Support,9,7
+xx--xxxxxx-,Doublelift,2020,2011,NA,TSM,ADC,47,113
+--x--xxxxx-,Impact,2020,2013,NA,Team Liquid,Top,86,210
+--x-xxxx-x-,SwordArt,2020,2013,CN,Suning,Support,52,50
+--xxx----x-,WildTurtle,2020,2013,NA,FlyQuest,ADC,48,171
+---xxxxx-x-,Bjergsen,2020,2014,NA,TSM,Middle,35,110
+---xx-xxxx-,Rekkles,2020,2014,EU,Fnatic,ADC,75,277
+----x----x-,KaKAO,2020,2015,TRK,SuperMassive Esports,Jungle,18,45
+----xxxxxx-,Karsa,2020,2015,CN,Top Esports,Jungle,52,135
+----x--x-x-,Kramer,2020,2015,CN,LGD Gaming,ADC,27,85
+-----xx--x-,Biofrost,2020,2016,NA,TSM,Support,19,9
+-----x-xxx-,Jankos,2020,2016,EU,G2 Esports,Jungle,69,190
+-----x---x-,micaO,2020,2016,BRL,INTZ,ADC,11,17
+-----x--xx-,Mikyx,2020,2016,EU,G2 Esports,Support,38,34
+-----xx--x-,Peanut,2020,2016,CN,LGD Gaming,Jungle,33,126
+-----x---x-,Vander,2020,2016,EU,Rogue,Support,19,20
+-----x-xxx-,Wunder,2020,2016,EU,G2 Esports,Top,62,163
+------xxxx-,Broxah,2020,2017,NA,Team Liquid,Jungle,57,156
+------xxxx-,caPs,2020,2017,EU,G2 Esports,Middle,68,249
+------x--x-,Gemini,2020,2017,PCS,Machi Esports,Jungle,7,20
+------x--x-,IgNar,2020,2017,NA,FlyQuest,Support,18,11
+------x-xx-,Mission,2020,2017,PCS,Machi Esports,Middle,28,58
+------x--x-,PowerOfEvil,2020,2017,NA,FlyQuest,Middle,18,55
+------x--x-,RedBert,2020,2017,BRL,INTZ,Support,14,11
+------x--x-,xiye,2020,2017,CN,LGD Gaming,Middle,39,155
+-------xxx-,JackeyLove,2020,2018,CN,Top Esports,ADC,47,201
+-------xxx-,Koala,2020,2018,PCS,Machi Esports,Support,26,28
+-------x-x-,Kongyue,2020,2018,PCS,PSG Talon,Jungle,9,39
+-------x-x-,SnowFlower,2020,2018,TRK,SuperMassive Esports,Support,21,14
+-------x-x-,Uniboy,2020,2018,PCS,PSG Talon,Middle,11,32
+-------x-x-,Zeitnot,2020,2018,TRK,SuperMassive Esports,ADC,21,85
+--------xx-,Langx,2020,2019,CN,LGD Gaming,Top,23,62
+--------xx-,Nemesis,2020,2019,EU,Fnatic,Middle,21,61
+---------x-,369,2020,2020,CN,Top Esports,Top,15,40
+---------x-,Acce,2020,2020,LLA,Rainbow7,Top,7,13
+---------x-,Ace,2020,2020,LJL,V3 Esports,Middle,5,11
+---------x-,Aloned,2020,2020,LLA,Rainbow7,Middle,7,23
+---------x-,Angel,2020,2020,CN,Suning,Middle,19,64
+---------x-,Archer,2020,2020,LJL,V3 Esports,ADC,5,18
+---------x-,Bin,2020,2020,CN,Suning,Top,19,74
+---------x-,Broken Blade,2020,2020,NA,TSM,Top,6,13
+---------x-,Bruce,2020,2020,PCS,Machi Esports,ADC,6,8
+---------x-,Bugi,2020,2020,LJL,V3 Esports,Jungle,5,12
+---------x-,Dee,2020,2020,PCS,PSG Talon,ADC,3,9
+---------x-,Doran,2020,2020,KR,DRX,Top,9,22
+---------x-,Envy,2020,2020,BRL,INTZ,Middle,5,8
+---------x-,Finn,2020,2020,EU,Rogue,Top,6,9
+---------x-,Gadget,2020,2020,CIS,Unicorns of Love.CIS,ADC,14,44
+---------x-,huanfeng,2020,2020,CN,Suning,ADC,19,76
+---------x-,Isles,2020,2020,OCE,Legacy Esports,Support,8,3
+---------x-,Josedeodo,2020,2020,LLA,Rainbow7,Jungle,7,22
+---------x-,Kanavi,2020,2020,CN,JD Gaming,Jungle,10,26
+---------x-,knight,2020,2020,CN,Top Esports,Middle,15,52
+---------x-,Leza,2020,2020,LLA,Rainbow7,ADC,7,13
+---------x-,LokeN,2020,2020,CN,JD Gaming,ADC,10,33
+---------x-,LvMao,2020,2020,CN,JD Gaming,Support,10,17
+---------x-,Mark,2020,2020,CN,LGD Gaming,Support,17,20
+---------x-,Orome,2020,2020,EU,MAD Lions,Top,10,24
+---------x-,Paz,2020,2020,LJL,V3 Esports,Top,5,8
+---------x-,Pyosik,2020,2020,KR,DRX,Jungle,9,37
+---------x-,Raes,2020,2020,OCE,Legacy Esports,ADC,8,34
+---------x-,Raina,2020,2020,LJL,V3 Esports,Support,5,2
+---------x-,Selfmade,2020,2020,EU,Fnatic,Jungle,11,37
+---------x-,shad0w,2020,2020,EU,MAD Lions,Jungle,10,26
+---------x-,Shadow,2020,2020,LLA,Rainbow7,Support,7,5
+---------x-,Shini,2020,2020,BRL,INTZ,Jungle,5,8
+---------x-,SofM,2020,2020,CN,Suning,Jungle,19,53
+---------x-,Solo,2020,2020,NA,FlyQuest,Top,6,7
+---------x-,Spica,2020,2020,NA,TSM,Jungle,6,11
+---------x-,Tank,2020,2020,PCS,PSG Talon,Middle,6,10
+---------x-,Tay,2020,2020,BRL,INTZ,Top,5,23
+---------x-,Topoon,2020,2020,OCE,Legacy Esports,Top,8,21
+---------x-,Yagao,2020,2020,CN,JD Gaming,Middle,10,23
+---------x-,yuyanjia,2020,2020,CN,Top Esports,Support,15,9
+---------x-,Zoom,2020,2020,CN,JD Gaming,Top,10,38
+-x----xxx--,Edward,2019,2012,CIS,Unicorns of Love.CIS,Support,34,23
+--xx-x-xx--,Mata,2019,2013,KR,T1,Support,58,49
+--xxxxxxx--,Sneaky,2019,2013,NA,Cloud9,ADC,78,248
+--xx-xxxx--,Uzi,2019,2013,CN,Royal Never Give Up,ADC,81,399
+--x-xxxxx--,Xmithie,2019,2013,NA,Team Liquid,Jungle,47,80
+---x-xxxx--,Svenskeren,2019,2014,NA,Cloud9,Jungle,34,97
+----x---x--,brTT,2019,2015,BRL,Flamengo Esports,ADC,11,31
+----x--xx--,G4,2019,2015,PCS,MEGA,Middle,14,35
+----x-x-x--,Huni,2019,2015,NA,Clutch Gaming,Top,45,122
+----x--xx--,Lloyd,2019,2015,PCS,MEGA,Jungle,14,20
+----x--xx--,Rookie,2019,2015,NA,Invictus Gaming,Middle,38,146
+----x------,Zin,2019,2015,VNM,GAM Esports,ADC,6,12
+----xxx-x--,Ziv,2019,2015,PCS,ahq eSports Club,Top,28,60
+-----x--x--,Kobbe,2019,2016,EU,Splyce,ADC,26,110
+------x-x--,Cody Sun,2019,2017,NA,Clutch Gaming,ADC,21,71
+------x-x--,Destiny,2019,2017,OCE,MAMMOTH,Support,10,6
+------xxx--,k1ng,2019,2017,OCE,MAMMOTH,ADC,14,35
+------x-x--,Levi,2019,2017,VNM,GAM Esports,Jungle,13,34
+------x-x--,Oddie,2019,2017,LAM,Isurus,Jungle,15,24
+------x-x--,Seiya,2019,2017,LAM,Isurus,Middle,15,37
+------xxx--,Slow,2019,2017,LAM,Isurus,Support,16,4
+------x-x--,Venus,2019,2017,VNM,Lowkey Esports.Vietnam,Support,15,15
+-------xx--,Baolan,2019,2018,NA,Invictus Gaming,Support,32,28
+-------xx--,Ceros,2019,2018,LJL,DetonatioN FocusMe,Middle,12,23
+-------xx--,Licorice,2019,2018,NA,Cloud9,Top,28,67
+-------xx--,Ning,2019,2018,NA,Invictus Gaming,Jungle,29,73
+-------xx--,Rockky,2019,2018,PCS,MEGA,Top,8,16
+-------xx--,TheShy,2019,2018,NA,Invictus Gaming,Top,27,97
+-------xx--,Triple,2019,2018,OCE,MAMMOTH,Middle,9,20
+-------xx--,Zeros,2019,2018,VNM,GAM Esports,Top,12,21
+-------xx--,Zeyzal,2019,2018,NA,Cloud9,Support,28,20
+--------x--,3z,2019,2019,PCS,Hong Kong Attitude,Top,14,23
+--------x--,Alex,2019,2019,PCS,ahq eSports Club,Jungle,6,9
+--------x--,APEX,2019,2019,PCS,ahq eSports Club,Middle,1,1
+--------x--,Artifact,2019,2019,VNM,Lowkey Esports.Vietnam,Middle,8,28
+--------x--,Celebrity,2019,2019,VNM,Lowkey Esports.Vietnam,ADC,8,32
+--------x--,Crash,2019,2019,PCS,Hong Kong Attitude,Jungle,14,34
+--------x--,cyeol,2019,2019,TRK,Royal Youth,Middle,8,12
+--------x--,Damonte,2019,2019,NA,Clutch Gaming,Middle,14,37
+--------x--,Deftly,2019,2019,NA,Cloud9,ADC,1,5
+--------x--,DeuL,2019,2019,PCS,MEGA,ADC,4,13
+--------x--,DNK,2019,2019,VNM,Lowkey Esports.Vietnam,Jungle,8,15
+--------x--,Effort,2019,2019,KR,T1,Support,12,8
+--------x--,FoFo,2019,2019,PCS,J Team,Middle,6,22
+--------x--,GimGoon,2019,2019,CN,FunPlus Phoenix,Top,18,51
+--------x--,Goku,2019,2019,BRL,Flamengo Esports,Middle,5,7
+--------x--,Hana,2019,2019,PCS,J Team,Jungle,6,3
+--------x--,Hani,2019,2019,VNM,Lowkey Esports.Vietnam,Top,8,11
+--------x--,Hieu3,2019,2019,VNM,GAM Esports,Support,1,1
+--------x--,Innaxe,2019,2019,CIS,Unicorns of Love.CIS,ADC,11,41
+--------x--,Kiaya,2019,2019,VNM,GAM Esports,Middle,6,16
+--------x--,Lehends,2019,2019,KR,Griffin,Support,11,10
+--------x--,Leyan,2019,2019,NA,Invictus Gaming,Jungle,3,6
+--------x--,Lilv,2019,2019,PCS,J Team,ADC,6,22
+--------x--,Lira,2019,2019,NA,Clutch Gaming,Jungle,14,33
+--------x--,Luci,2019,2019,BRL,Flamengo Esports,Support,5,3
+--------x--,MnM,2019,2019,PCS,Hong Kong Attitude,ADC,1,1
+--------x--,Nuclear,2019,2019,KR,DWG KIA,ADC,18,83
+--------x--,Pilot,2019,2019,TRK,Royal Youth,ADC,8,24
+--------x--,Pop,2019,2019,PCS,MEGA,Support,4,3
+--------x--,Rainbow,2019,2019,PCS,ahq eSports Club,Middle,5,14
+--------x--,Rest,2019,2019,PCS,J Team,Top,6,19
+--------x--,Robo,2019,2019,BRL,Flamengo Esports,Top,5,5
+--------x--,Shrimp,2019,2019,BRL,Flamengo Esports,Jungle,5,25
+--------x--,Slay,2019,2019,VNM,GAM Esports,Support,5,4
+--------x--,Sw0rd,2019,2019,KR,Griffin,Top,11,34
+--------x--,Teddy,2019,2019,KR,T1,ADC,14,59
+--------x--,Tolerant,2019,2019,TRK,Royal Youth,Support,8,5
+--------x--,Tore,2019,2019,EU,Splyce,Support,20,10
+--------x--,Wako,2019,2019,PCS,ahq eSports Club,ADC,6,8
+--------x--,Warangelus,2019,2019,LAM,Isurus,ADC,8,30
+--------x--,Xerxe,2019,2019,EU,Splyce,Jungle,20,69
+--------x--,Ysera,2019,2019,PCS,ahq eSports Club,Support,6,1
+x-xxx-xx---,sOAZ,2018,2011,EU,Fnatic,Top,84,6
+-x-xxxxx---,Clearlove,2018,2012,CN,EDward Gaming,Jungle,50,120
+-xx---xx---,Diamondprox,2018,2012,CIS,Gambit Esports,Jungle,47,99
+--x----x---,Benny,2018,2013,EU,MAD Team,Jungle,18,23
+---x---x---,fabFabulous,2018,2014,TRK,SuperMassive Esports,Top,9,14
+---x-------,Spirit,2018,2014,KR,Kwangdong Freecs,Jungle,7,5
+----xx-x---,aphromoo,2018,2015,NA,100 Thieves,Support,18,16
+----x--x---,Hjarnan,2018,2015,EU,G2 Esports,ADC,30,107
+----xx-x---,Kuro,2018,2015,KR,Kwangdong Freecs,Middle,42,161
+----x-xx---,Pobelter,2018,2015,NA,Team Liquid,Middle,19,37
+----xx-x---,Ryu,2018,2015,NA,100 Thieves,Middle,25,75
+----x--x---,Score,2018,2015,KR,KT Rolster,Jungle,21,37
+----xx-x---,Smeb,2018,2015,KR,KT Rolster,Top,44,148
+-----xxx---,Ambition,2018,2016,KR,Gen.G,Jungle,33,55
+-----xxx---,Crown,2018,2016,KR,Gen.G,Middle,39,122
+-----xxx---,CuVee,2018,2016,KR,Gen.G,Top,39,99
+-----x-x---,Duke,2018,2016,NA,Invictus Gaming,Top,25,63
+-----xxx---,Kira,2018,2016,CIS,Gambit Esports,Middle,23,53
+-----xxx---,Mlxg,2018,2016,CN,Royal Never Give Up,Jungle,28,52
+-----xxx---,PvPStejos,2018,2016,CIS,Gambit Esports,Top,23,40
+------xx---,Betty,2018,2017,PCS,Flash Wolves,ADC,13,36
+------xx---,Bigkoro,2018,2017,VNM,Phong Vũ Buffalo,ADC,13,37
+------xx---,Fix,2018,2017,LAM,Kaos Latin Gamers,ADC,8,20
+------xx---,Haru,2018,2017,KR,Gen.G,Jungle,6,14
+------xx---,iBoy,2018,2017,CN,EDward Gaming,ADC,23,107
+------xx---,Letme,2018,2017,CN,Royal Never Give Up,Top,27,40
+------xx---,Naul,2018,2017,VNM,Phong Vũ Buffalo,Middle,13,34
+------xx---,Palette,2018,2017,VNM,Phong Vũ Buffalo,Support,13,5
+------xx---,Plugo,2018,2017,LAM,Kaos Latin Gamers,Middle,8,12
+------xx---,Shernfire,2018,2017,OCE,Dire Wolves,Jungle,7,15
+------xx---,Tierwulf,2018,2017,LAM,Kaos Latin Gamers,Jungle,8,6
+-------x---,AnDa,2018,2018,NA,100 Thieves,Jungle,6,29
+-------x---,Arce,2018,2018,LAM,INFINITY,Support,8,3
+-------x---,Attila,2018,2018,EU,Team Vitality,ADC,6,24
+-------x---,baybay,2018,2018,PCS,G-Rex,Jungle,3,3
+-------x---,BioPanther,2018,2018,OCE,Dire Wolves,Top,4,6
+-------x---,Breeze,2018,2018,EU,MAD Team,ADC,6,7
+-------x---,Cabochard,2018,2018,EU,Team Vitality,Top,6,12
+-------x---,Candy,2018,2018,PCS,G-Rex,Middle,14,38
+-------x---,Cotopaco,2018,2018,LAM,INFINITY,Middle,8,23
+-------x---,Cupcake,2018,2018,OCE,Dire Wolves,Support,4,3
+-------x---,dyNquedo,2018,2018,BRL,KaBuM! e-Sports,Middle,5,13
+-------x---,Empt2y,2018,2018,PCS,G-Rex,Jungle,11,26
+-------x---,GBM,2018,2018,TRK,SuperMassive Esports,Middle,9,24
+-------x---,Haro,2018,2018,CN,EDward Gaming,Jungle,11,33
+-------x---,Jactroll,2018,2018,EU,Team Vitality,Support,6,1
+-------x---,Jiizuke,2018,2018,EU,Team Vitality,Middle,6,20
+-------x---,K,2018,2018,EU,MAD Team,Support,6,1
+-------x---,Kiin,2018,2018,KR,Kwangdong Freecs,Top,9,16
+-------x---,Kikis,2018,2018,EU,Team Vitality,Jungle,6,14
+-------x---,Lodik,2018,2018,CIS,Gambit Esports,ADC,9,24
+-------x---,Meliodas,2018,2018,VNM,Phong Vũ Buffalo,Jungle,5,4
+-------x---,MooJin,2018,2018,PCS,Flash Wolves,Jungle,7,23
+-------x---,Mowgli,2018,2018,KR,Kwangdong Freecs,Jungle,2,3
+-------x---,Nate,2018,2018,LAM,Kaos Latin Gamers,Top,4,10
+-------x---,Niksar,2018,2018,PCS,Ascension Gaming,ADC,4,6
+-------x---,Olleh,2018,2018,NA,Team Liquid,Support,6,4
+-------x---,Ranger,2018,2018,BRL,KaBuM! e-Sports,Jungle,5,4
+-------x---,Ray,2018,2018,CN,EDward Gaming,Top,17,45
+-------x---,Relic,2018,2018,LAM,INFINITY,Top,8,10
+-------x---,Renn,2018,2018,LAM,INFINITY,ADC,8,32
+-------x---,Rich,2018,2018,PCS,Ascension Gaming,Support,4,2
+-------x---,Rikara,2018,2018,NA,100 Thieves,ADC,6,18
+-------x---,Riyev,2018,2018,BRL,KaBuM! e-Sports,Support,5,3
+-------x---,Stitch,2018,2018,PCS,G-Rex,ADC,14,66
+-------x---,Stomaged,2018,2018,TRK,SuperMassive Esports,Jungle,9,12
+-------x---,TusiN,2018,2018,KR,Kwangdong Freecs,Support,9,2
+-------x---,Ucal,2018,2018,KR,KT Rolster,Middle,11,32
+-------x---,Udysof,2018,2018,OCE,Dire Wolves,Jungle,2,3
+-------x---,viviD,2018,2018,LJL,DetonatioN FocusMe,Support,8,4
+-------x---,Wadid,2018,2018,EU,G2 Esports,Support,24,11
+-------x---,XuHao,2018,2018,VNM,Phong Vũ Buffalo,Jungle,1,5
+-------x---,Zantins,2018,2018,BRL,KaBuM! e-Sports,Top,5,8
+-x----x----,Archie,2017,2012,VNM,GAM Esports,Top,10,17
+-xx-xxx----,PraY,2017,2012,KR,Longzhu Gaming,ADC,65,259
+--x-xxx----,Mithy,2017,2013,EU,G2 Esports,Support,41,21
+---xxxx----,GorillA,2017,2014,KR,Longzhu Gaming,Support,52,34
+---x--x----,Jesiz,2017,2014,EU,Fnatic,Support,25,20
+---xxxx----,Westdoor,2017,2014,PCS,ahq eSports Club,Middle,36,86
+---x--x----,Zero,2017,2014,CN,Team WE,Support,23,12
+----xxx----,AN,2017,2015,PCS,ahq eSports Club,ADC,22,70
+----xxx----,Bang,2017,2015,KR,T1,ADC,65,225
+----x-x----,Flame,2017,2015,NA,Immortals,Top,10,25
+----xxx----,Mountain,2017,2015,PCS,ahq eSports Club,Jungle,22,41
+----xxx----,Wolf,2017,2015,KR,T1,Support,51,33
+-----xx----,Blank,2017,2016,KR,T1,Jungle,19,39
+-----xx----,Chawy,2017,2016,PCS,ahq eSports Club,Middle,3,4
+-----xx----,Expect,2017,2016,EU,G2 Esports,Top,12,30
+-----xx----,Hauntzer,2017,2016,NA,TSM,Top,13,30
+-----xx----,MMD,2017,2016,PCS,Flash Wolves,Top,12,22
+-----xx----,Mouse,2017,2016,CN,EDward Gaming,Top,13,19
+-----xx----,Smoothie,2017,2016,NA,Cloud9,Support,27,8
+-----xx----,Trick,2017,2016,EU,G2 Esports,Jungle,12,11
+------x----,957,2017,2017,CN,Team WE,Top,22,53
+------x----,4LaN,2017,2017,BRL,Team oNe eSports,Jungle,9,15
+------x----,Absolut,2017,2017,BRL,Team oNe eSports,ADC,9,33
+------x----,Albis,2017,2017,PCS,ahq eSports Club,Support,6,0
+------x----,Ben,2017,2017,CN,Team WE,Support,19,7
+------x----,Blasting,2017,2017,CIS,Gambit Esports,ADC,4,7
+------x----,Brucer,2017,2017,BRL,Team oNe eSports,Middle,4,5
+------x----,Chippys,2017,2017,OCE,Dire Wolves,Top,5,16
+------x----,Condi,2017,2017,CN,Team WE,Jungle,22,33
+------x----,Contractz,2017,2017,NA,Cloud9,Jungle,18,36
+------x----,Cuzz,2017,2017,KR,Longzhu Gaming,Jungle,9,15
+------x----,Dara,2017,2017,LJL,Rampage,Support,4,0
+------x----,Edger,2017,2017,BRL,Team oNe eSports,Top,9,14
+------x----,Frozen,2017,2017,TRK,Fenerbahçe Esports,Middle,15,41
+------x----,Genthix,2017,2017,LAM,Lyon Gaming,Support,7,0
+------x----,GodKwai,2017,2017,PCS,Hong Kong Attitude,Jungle,7,9
+------x----,Japone,2017,2017,TRK,Fenerbahçe Esports,Support,15,4
+------x----,Jirall,2017,2017,LAM,Lyon Gaming,Top,7,11
+------x----,MANTARRAYA,2017,2017,LAM,Kaos Latin Gamers,Top,4,5
+------x----,Marfz,2017,2017,BRL,Team oNe eSports,Middle,5,14
+------x----,Maxlore,2017,2017,EU,Misfits Gaming,Jungle,12,17
+------x----,Mystic,2017,2017,CN,Team WE,ADC,22,84
+------x----,Nevan,2017,2017,VNM,GAM Esports,Support,3,1
+------x----,Noway,2017,2017,VNM,GAM Esports,ADC,7,28
+------x----,Optimus,2017,2017,VNM,GAM Esports,Middle,7,13
+------x----,Padden,2017,2017,TRK,Fenerbahçe Esports,ADC,15,74
+------x----,Ramune,2017,2017,LJL,Rampage,Middle,4,5
+------x----,Ren,2017,2017,VNM,Young Generation,Top,2,1
+------x----,Richard,2017,2017,OCE,Dire Wolves,Middle,5,15
+------x----,Riris,2017,2017,PCS,Hong Kong Attitude,Top,8,14
+------x----,Sya,2017,2017,VNM,GAM Esports,Support,4,3
+------x----,Thaldrin,2017,2017,TRK,Fenerbahçe Esports,Top,15,14
+------x----,Tussle,2017,2017,LJL,Rampage,Jungle,4,4
+------x----,yT,2017,2017,VNM,Young Generation,Top,5,8
+------x----,Yutorimoyashi,2017,2017,LJL,Rampage,ADC,4,2
+--x-xx-----,Bengi,2016,2013,KR,T1,Jungle,62,152
+--xx-x-----,Looper,2016,2013,CN,Royal Never Give Up,Top,45,131
+--xx-x-----,Meteos,2016,2013,NA,Cloud9,Jungle,26,64
+--x-xx-----,NL,2016,2013,PCS,Flash Wolves,ADC,19,64
+---xxx-----,Korol,2016,2014,CN,EDward Gaming,Top,19,63
+---xxx-----,PawN,2016,2014,CN,EDward Gaming,Middle,30,155
+----xx-----,AmazingJ,2016,2015,CN,I May,Top,12,26
+----xx-----,Darshan,2016,2015,NA,Counter Logic Gaming,Top,12,30
+-----x-----,Athena,2016,2016,CN,I May,Middle,5,9
+-----x-----,Avoidless,2016,2016,CN,I May,Jungle,6,11
+-----x-----,BaeMe,2016,2016,CN,I May,Middle,2,8
+-----x-----,Chres,2016,2016,EU,Splyce,Middle,6,26
+-----x-----,FORG1VEN,2016,2016,EU,H2k-Gaming,ADC,13,36
+-----x-----,Jinjiao,2016,2016,CN,I May,ADC,6,22
+-----x-----,Jockster,2016,2016,BRL,INTZ,Support,6,2
+-----x-----,Kold,2016,2016,EU,Splyce,Jungle,6,10
+-----x-----,Likkrit,2016,2016,CIS,Albus NoX Luna,Support,10,14
+-----x-----,Onesh0tiq,2016,2016,CIS,Albus NoX Luna,ADC,10,26
+-----x-----,Revolta,2016,2016,BRL,INTZ,Jungle,6,8
+-----x-----,Road,2016,2016,CN,I May,Support,5,4
+-----x-----,Smurf,2016,2016,CIS,Albus NoX Luna,Top,10,16
+-----x-----,Stixxay,2016,2016,NA,Counter Logic Gaming,ADC,6,28
+-----x-----,tockers,2016,2016,BRL,INTZ,Middle,6,12
+-----x-----,Wraith,2016,2016,KR,Samsung Galaxy,Support,2,3
+-----x-----,Yang,2016,2016,BRL,INTZ,Top,6,9
+xxxxx------,Dyrus,2015,2011,NA,TSM,Top,43,98
+x-xxx------,xPeke,2015,2011,EU,Origen,Middle,57,289
+xxxxx------,YellOwStaR,2015,2011,EU,Fnatic,Support,63,121
+-x--x------,Kid,2015,2012,NA,Invictus Gaming,ADC,12,47
+-x--x------,Zz1tai,2015,2012,NA,Invictus Gaming,Top,13,49
+--xxx------,BalIs,2015,2013,NA,Cloud9,Top,24,66
+--xxx------,Hai,2015,2013,NA,Cloud9,Jungle,34,64
+--xxx------,imp,2015,2013,CN,LGD Gaming,ADC,41,242
+--xxx------,LemonNation,2015,2013,NA,Cloud9,Support,34,9
+--x-x------,Nagne,2015,2013,KR,KT Rolster,Middle,26,95
+--x-x------,Steak,2015,2013,PCS,Flash Wolves,Top,14,20
+---xx------,Acorn,2015,2014,CN,LGD Gaming,Top,16,26
+---xx------,Amazing,2015,2014,EU,Origen,Jungle,23,44
+---xx------,Lustboy,2015,2014,NA,TSM,Support,16,12
+----x------,007x,2015,2015,PCS,Bangkok Titans,Jungle,6,8
+----x------,Arrow,2015,2015,KR,KT Rolster,ADC,10,50
+----x------,Dioud,2015,2015,BRL,paiN Gaming,Support,6,4
+----x------,Easyhoon,2015,2015,KR,T1,Middle,4,15
+----x------,FEBIVEN,2015,2015,EU,Fnatic,Middle,12,51
+----x------,GodV,2015,2015,CN,LGD Gaming,Middle,6,21
+----x------,Hojin,2015,2015,KR,ROX Tigers,Jungle,17,38
+----x------,Kami,2015,2015,BRL,paiN Gaming,Middle,6,17
+----x------,kaSing,2015,2015,EU,H2k-Gaming,Support,6,8
+----x------,Kitties,2015,2015,NA,Invictus Gaming,Support,6,7
+----x------,Loulex,2015,2015,EU,H2k-Gaming,Jungle,6,5
+----x------,MaRin,2015,2015,KR,T1,Top,16,78
+----x------,Moss,2015,2015,PCS,Bangkok Titans,Support,6,2
+----x------,Mylon,2015,2015,BRL,paiN Gaming,Top,6,14
+----x------,Piccaboo,2015,2015,KR,KT Rolster,Support,10,4
+----x------,Pyl,2015,2015,CN,LGD Gaming,Support,6,1
+----x------,Reignover,2015,2015,EU,Fnatic,Jungle,12,31
+----x------,Sirt,2015,2015,BRL,paiN Gaming,Jungle,6,7
+----x------,tbq,2015,2015,CN,LGD Gaming,Jungle,6,9
+----x------,Time,2015,2015,NA,Invictus Gaming,ADC,1,10
+----x------,WarL0cK,2015,2015,PCS,Bangkok Titans,Top,6,12
+x--x-------,CandyPanda,2014,2011,EU,SK Gaming,ADC,11,43
+x-xx-------,Cyanide,2014,2011,EU,Fnatic,Jungle,47,130
+xx-x-------,Nyph,2014,2011,EU,Alliance,Support,14,8
+-x-x-------,BeBe,2014,2012,PCS,Taipei Assassins,ADC,24,115
+-x-x-------,Froggen,2014,2012,EU,Alliance,Middle,21,83
+-xxx-------,Watch,2014,2012,KR,NaJin White Shield,Jungle,33,56
+-x-x-------,Wickd,2014,2012,EU,Alliance,Top,21,42
+--xx-------,Cool,2014,2013,CN,Oh My God,Middle,34,185
+--xx-------,Da7,2014,2013,CN,Oh My God,Support,8,9
+--xx-------,dade,2014,2013,KR,Samsung Blue,Middle,31,118
+--xx-------,DanDy,2014,2013,KR,Samsung White,Jungle,35,162
+--xx-------,GodLike,2014,2013,NA,LMQ,Top,24,45
+--xx-------,Gogoing,2014,2013,CN,Oh My God,Top,34,109
+--xx-------,LoveLing,2014,2013,CN,Oh My God,Jungle,34,105
+--xx-------,san,2014,2013,CN,Oh My God,ADC,34,171
+--xx-------,Tabzz,2014,2013,EU,Alliance,ADC,22,63
+--xx-------,Winds,2014,2013,PCS,Taipei Assassins,Jungle,10,26
+---x-------,Achie,2014,2014,PCS,Taipei Assassins,Top,6,7
+---x-------,CHIEH,2014,2014,PCS,Taipei Assassins,Support,6,4
+---x-------,Cloud,2014,2014,CN,Oh My God,Support,8,6
+---x-------,Cola,2014,2014,CN,Royal Club,Top,20,61
+---x-------,Corn,2014,2014,CN,Royal Club,Middle,20,68
+---x-------,Crystal,2014,2014,TRK,Dark Passage,Jungle,6,2
+---x-------,Danagorn,2014,2014,BRL,KaBuM! e-Sports,Jungle,6,7
+---x-------,dans,2014,2014,BRL,KaBuM! e-Sports,Support,6,0
+---x-------,fredy122,2014,2014,EU,SK Gaming,Top,6,17
+---x-------,FZZF,2014,2014,CN,EDward Gaming,Support,12,9
+---x-------,GarnetDevil,2014,2014,PCS,ahq eSports Club,ADC,7,18
+---x-------,Ggoong,2014,2014,KR,NaJin White Shield,Middle,10,35
+---x-------,Gilius,2014,2014,EU,SK Gaming,Jungle,3,4
+---x-------,GreenTea,2014,2014,PCS,ahq eSports Club,Support,7,10
+---x-------,Heart,2014,2014,KR,Samsung Blue,Support,13,9
+---x-------,HolyPhoenix,2014,2014,TRK,Dark Passage,ADC,6,13
+---x-------,inSec,2014,2014,CN,Royal Club,Jungle,20,59
+---x-------,Lep,2014,2014,BRL,KaBuM! e-Sports,Top,6,4
+---x-------,Minerva,2014,2014,BRL,KaBuM! e-Sports,ADC,6,11
+---x-------,Mor,2014,2014,NA,LMQ,Support,6,3
+---x-------,Morning,2014,2014,PCS,Taipei Assassins,Middle,6,15
+---x-------,NaMei,2014,2014,CN,EDward Gaming,ADC,12,46
+---x-------,Naru,2014,2014,TRK,Dark Passage,Middle,6,1
+---x-------,Naz,2014,2014,PCS,ahq eSports Club,Jungle,7,19
+---x-------,NoName,2014,2014,NA,LMQ,Jungle,6,9
+---x-------,nRated,2014,2014,EU,SK Gaming,Support,6,3
+---x-------,Prydz,2014,2014,PCS,ahq eSports Club,Top,7,22
+---x-------,Save,2014,2014,KR,NaJin White Shield,Top,10,28
+---x-------,Shook,2014,2014,EU,Alliance,Jungle,6,18
+---x-------,tinowns,2014,2014,BRL,KaBuM! e-Sports,Middle,6,14
+---x-------,Touch,2014,2014,TRK,Dark Passage,Support,6,1
+---x-------,U,2014,2014,CN,EDward Gaming,Middle,12,59
+---x-------,Vasilii,2014,2014,NA,LMQ,ADC,6,19
+---x-------,XiaoWeiXiao,2014,2014,NA,LMQ,Middle,6,24
+---x-------,Zefa,2014,2014,KR,NaJin White Shield,ADC,10,30
+xxx--------,ReginaId,2013,2011,NA,TSM,Middle,29,108
+xxx--------,TheOddOne,2013,2011,NA,TSM,Jungle,29,69
+xxx--------,Xpecial,2013,2011,NA,TSM,Support,29,23
+-xx--------,Alex Ich,2013,2012,EU,Gambit Gaming,Middle,34,166
+-xx--------,Cain,2013,2012,KR,NaJin Black Sword,Support,23,25
+-xx--------,Darien,2013,2012,EU,Gambit Gaming,Top,34,80
+-xx--------,Genja,2013,2012,EU,Gambit Gaming,ADC,34,138
+--x--------,Alunir,2013,2013,CIS,Gaminggear.EU,Jungle,16,20
+--x--------,BloodWater,2013,2013,NA,Team Vulcun,Support,16,26
+--x--------,DeadlyBrother,2013,2013,CIS,Gaminggear.EU,ADC,16,42
+--x--------,Dexter,2013,2013,EU,Lemondogs,Jungle,16,56
+--x--------,Exosen,2013,2013,PCS,Mineski,ADC,16,44
+--x--------,Expession,2013,2013,KR,NaJin Black Sword,Top,16,52
+--x--------,Inspirro,2013,2013,CIS,Gaminggear.EU,Support,16,10
+--x--------,Kaigu,2013,2013,PCS,Mineski,Jungle,16,26
+--x--------,Lucky,2013,2013,CN,Royal Club,Jungle,18,28
+--x--------,mancloud,2013,2013,NA,Team Vulcun,Middle,16,54
+--x--------,Mazzerin,2013,2013,CIS,Gaminggear.EU,Middle,16,28
+--x--------,Nbs,2013,2013,CIS,Gaminggear.EU,Top,16,18
+--x--------,nukeduck,2013,2013,EU,Lemondogs,Middle,16,62
+--x--------,Piglet,2013,2013,KR,T1,ADC,36,230
+--x--------,pomelo,2013,2013,CN,Oh My God,Support,18,20
+--x--------,PoohManDu,2013,2013,KR,T1,Support,36,40
+--x--------,Puszu,2013,2013,EU,Fnatic,ADC,30,192
+--x--------,Snoy,2013,2013,PCS,Mineski,Top,16,32
+--x--------,Tabe,2013,2013,CN,Royal Club,Support,52,50
+--x--------,Tgee,2013,2013,PCS,Mineski,Support,16,10
+--x--------,Voidle,2013,2013,EU,Gambit Gaming,Support,24,16
+--x--------,Wh1t3zZ,2013,2013,CN,Royal Club,Middle,18,82
+--x--------,Yume,2013,2013,PCS,Mineski,Middle,16,30
+--x--------,Zorozero,2013,2013,EU,Lemondogs,Top,16,36
+--x--------,Zuna,2013,2013,NA,Team Vulcun,ADC,16,52
+xx---------,bigfatlp,2012,2011,NA,Counter Logic Gaming,Middle,9,26
+xx---------,Chaox,2012,2011,NA,TSM,ADC,13,61
+xx---------,Chauster,2012,2011,NA,Counter Logic Gaming,Support,9,21
+xx---------,HotshotGG,2012,2011,NA,Counter Logic Gaming,Jungle,9,13
+xx---------,Kev1n,2012,2011,EU,SK Gaming,Top,8,10
+-x---------,Araneae,2012,2012,EU,SK Gaming,Jungle,3,0
+-x---------,CaoMei,2012,2012,CN,Team WE,Top,6,14
+-x---------,CloudTemplar,2012,2012,KR,Azubu Frost,Jungle,21,40
+-x---------,Crumbz,2012,2012,NA,Dignitas,Top,3,5
+-x---------,illuSioN,2012,2012,NA,Invictus Gaming,Jungle,7,14
+-x---------,Imaqtpie,2012,2012,EU,Dignitas,ADC,3,6
+-x---------,IWDominate,2012,2012,EU,Dignitas,Jungle,3,3
+-x---------,Junie,2012,2012,PCS,Saigon Jokers,Support,3,3
+-x---------,Krepo,2012,2012,EU,Counter Logic Gaming Europe,Support,15,17
+-x---------,Lilballz,2012,2012,PCS,Taipei Assassins,Jungle,18,22
+-x---------,MadLife,2012,2012,KR,Azubu Frost,Support,21,20
+-x---------,MakNooN,2012,2012,KR,NaJin Black Sword,Top,7,28
+-x---------,Misaya,2012,2012,CN,Team WE,Middle,6,30
+-x---------,MiSTakE,2012,2012,PCS,Taipei Assassins,Support,18,14
+-x---------,Nixwater,2012,2012,PCS,Saigon Jokers,Middle,3,8
+-x---------,ocelote,2012,2012,EU,SK Gaming,Middle,3,2
+-x---------,Patoy,2012,2012,EU,Dignitas,Support,3,2
+-x---------,PDD,2012,2012,NA,Invictus Gaming,Top,7,20
+-x---------,QTV,2012,2012,PCS,Saigon Jokers,Top,3,5
+-x---------,RapidStar,2012,2012,KR,Azubu Frost,Middle,21,81
+-x---------,scarra,2012,2012,EU,Dignitas,Middle,3,10
+-x---------,Shy,2012,2012,KR,Azubu Frost,Top,21,74
+-x---------,Snoopeh,2012,2012,EU,Counter Logic Gaming Europe,Jungle,15,18
+-x---------,Ssong,2012,2012,KR,NaJin Black Sword,Middle,7,30
+-x---------,Stanley,2012,2012,PCS,Taipei Assassins,Top,18,56
+-x---------,Toyz,2012,2012,PCS,Taipei Assassins,Middle,18,74
+-x---------,Voyboy,2012,2012,NA,Counter Logic Gaming,Top,3,2
+-x---------,WeiXiao,2012,2012,CN,Team WE,ADC,6,28
+-x---------,Woong,2012,2012,KR,Azubu Frost,ADC,21,70
+-x---------,XiaoXiao,2012,2012,NA,Invictus Gaming,Support,7,3
+-x---------,yellowpete,2012,2012,EU,Counter Logic Gaming Europe,ADC,15,41
+x----------,Astarte,2011,2011,PCS,Pacific eSports,Middle,3,3
+x----------,Axion,2011,2011,PCS,Xan,Middle,3,14
+x----------,Dan Dinh,2011,2011,NA,EPIK Gamer,Jungle,7,12
+x----------,Elementz,2011,2011,NA,Counter Logic Gaming,Support,6,6
+x----------,gibo,2011,2011,PCS,Pacific eSports,Support,3,2
+x----------,iNtrigueD,2011,2011,PCS,Xan,Support,3,2
+x----------,Kujaa,2011,2011,EU,against All authority,Support,12,3
+x----------,LaMiaZeaLoT,2011,2011,EU,Fnatic,ADC,11,57
+x----------,Linak,2011,2011,EU,against All authority,Jungle,12,21
+x----------,Mellisan,2011,2011,EU,Fnatic,Support,11,7
+x----------,MoMa,2011,2011,EU,against All authority,Middle,12,50
+x----------,Radion6870,2011,2011,PCS,Xan,Jungle,3,3
+x----------,Reyk,2011,2011,EU,Team gamed!de,Top,5,4
+x----------,Saintvicious,2011,2011,NA,Counter Logic Gaming,Jungle,6,15
+x----------,Salce,2011,2011,NA,EPIK Gamer,Middle,7,41
+x----------,Shushei,2011,2011,EU,Fnatic,Top,11,69
+x----------,The Rain Man,2011,2011,NA,TSM,Top,9,36
+x----------,Vech,2011,2011,PCS,Xan,Top,3,5
+x----------,vy,2011,2011,PCS,Pacific eSports,ADC,3,7
+x----------,Westrice,2011,2011,NA,EPIK Gamer,Top,7,42
+x----------,wewillfailer,2011,2011,EU,Fnatic,Top,3,6
+x----------,wormy,2011,2011,PCS,Pacific eSports,Top,3,7
+x----------,Zappy,2011,2011,PCS,Xan,ADC,3,9
+x----------,Zylor,2011,2011,EU,Team gamed!de,Jungle,5,5
+x----------,dabe,2011,2011,PCS,Pacific eSports,Jungle,3,2

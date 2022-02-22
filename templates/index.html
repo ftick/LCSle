@@ -11,14 +11,14 @@
 <body>
 
 <h2>Worldsle</h2>
-<h3>A LoL Worlds Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
-I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+<h3>A LoL Worlds Wordle-like by <a href="https://github.com/ftick">ftick</a></h3>
+I'm thinking of a Worlds Player. Guess who! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 
 <br><br>
 {% if data|length > 0 %}
 <div class="guesses">
     <div class="row">
-        {% for hint in ["Gen", "Type 1", "Type 2", "Height", "Weight", "Guess"] %}
+        {% for hint in ["Debut", "Region", "Team", "Role", "Games Played", "Kills", "Guess"] %}
         <div class='column'>
             <p class="hint">{{hint}}</p>
         </div>
@@ -27,11 +27,11 @@ I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses. <di
     
     {% for x in data %}
         <div class="row">
-        {% for hint in ["Gen", "Type 1", "Type 2", "Height", "Weight", "Guess"] %}
+        {% for hint in ["Debut", "Region", "Team", "Role", "Games Played", "Kills", "Guess"] %}
               <div class='column'>
               {% if hint == "Guess" %}
               <div class="tooltip"><p class=guess>{{x[hint]}}</p>
-                <span class="tooltiptext">{{x["pokeinfo"] | safe}}</span>
+                <span class="tooltiptext">{{x["playerinfo"] | safe}}</span>
               </div>
               {% else %}
                 {% if x[hint] == "🟩" %}
@@ -39,9 +39,6 @@ I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses. <di
                 {% endif %}
                 {% if x[hint] == "🟥" %}
                 <img class=emoji src="{{url_for('static', filename='wrong.png') }}">
-                {% endif %}
-                {% if x[hint] == "🟨" %}
-                <img class=emoji src="{{url_for('static', filename='wrongpos.png') }}">
                 {% endif %}
                 {% if x[hint] == "🔼" %}
                 <img class=emoji src="{{url_for('static', filename='up.png') }}">
@@ -77,7 +74,7 @@ You won!
 You lost!
 {% endif %}
 {% if gameOver > 0 %}
-The secret Pokémon was <b>{{secret}}</b>!<br>
+The secret player was <b>{{secret}}</b>!<br>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic|safe}}')" href="#">📄 Share</a>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic_names|safe}}')" href="#">👀 Share w/names</a>
 {% endif %}
@@ -85,10 +82,10 @@ The secret Pokémon was <b>{{secret}}</b>!<br>
 <form action="{{ url_for('index', clear=True) }}" method="GET">
   <input type="hidden" name="clear" value="1" /> 
   <button class="togglec" type="submit" name="gen" value="8">▶️ New Game</button><br>
-  <label for="quantity">Guess Pkmn from gen</label>
-  <input class="mg_input" type="number" id="mingen" name="mingen" min="1" max="8" value="{{mingen}}" oninput="validity.valid||(value='');">
+  <label for="quantity">Guess Players from Worlds</label>
+  <input class="mg_input" type="number" id="minyear" name="minyear" min="2011" max="2021" value="{{minyear}}" oninput="validity.valid||(value='');">
   <label for="quantity">to</label>
-  <input class="mg_input" type="number" id="maxgen" name="maxgen" min="1" max="8" value="{{maxgen}}" oninput="validity.valid||(value='');"><br><br>
+  <input class="mg_input" type="number" id="maxyear" name="maxyear" min="2011" max="2021" value="{{maxyear}}" oninput="validity.valid||(value='');"><br><br>
 </form>
 <br><a href="{{ url_for('daily') }}">Try Daily Worldsle!</a>
 

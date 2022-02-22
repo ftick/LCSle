@@ -11,14 +11,14 @@
 <body>
 
 <h2>Worldsle Daily</h2>
-<h3>A LoL Worlds Wordle-like by <a href="https://www.ftick.github.io">ftick</a></h3>
-I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🟨: Type in wrong position<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+<h3>A LoL Worlds Wordle-like by <a href="https://github.com/ftick">ftick</a></h3>
+I'm thinking of a Worlds Player. Guess who! You have {{attempts}} guesses left today. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 <br>(Updates @ 00:00 GMT-10)
 <br><br>
 {% if data|length > 0 %}
 <div class="guesses">
     <div class="row">
-        {% for hint in ["Gen", "Type 1", "Type 2", "Height", "Weight", "Guess"] %}
+        {% for hint in ["Debut", "Region", "Team", "Role", "Games Played", "Kills", "Guess"] %}
         <div class='column'>
             <p class="hint">{{hint}}</p>
         </div>
@@ -27,11 +27,11 @@ I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses left
     
     {% for x in data %}
         <div class="row">
-        {% for hint in ["Gen", "Type 1", "Type 2", "Height", "Weight", "Guess"] %}
+        {% for hint in ["Debut", "Region", "Team", "Role", "Games Played", "Kills", "Guess"] %}
               <div class='column'>
               {% if hint == "Guess" %}
               <div class="tooltip"><p class=guess>{{x[hint]}}</p>
-                <span class="tooltiptext">{{x["pokeinfo"] | safe}}</span>
+                <span class="tooltiptext">{{x["playerinfo"] | safe}}</span>
               </div>
               {% else %}
                 {% if x[hint] == "🟩" %}
@@ -39,9 +39,6 @@ I'm thinking of a Worlds Player. Guess which! You have {{attempts}} guesses left
                 {% endif %}
                 {% if x[hint] == "🟥" %}
                 <img class=emoji src="{{url_for('static', filename='wrong.png') }}">
-                {% endif %}
-                {% if x[hint] == "🟨" %}
-                <img class=emoji src="{{url_for('static', filename='wrongpos.png') }}">
                 {% endif %}
                 {% if x[hint] == "🔼" %}
                 <img class=emoji src="{{url_for('static', filename='up.png') }}">
@@ -79,7 +76,7 @@ You lost!
 The secret Pokémon was <b>{{secret}}</b>!<br>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic|safe}}')" href="#">📄 Share</a>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic_names|safe}}')" href="#">👀 Share w/names</a><br>
-Generation hint arrows are obscured in daily<br>mosaics to avoid spoiling other players!<br><br>
+Debut year hint arrows are obscured in daily<br>mosaics to avoid spoiling other players!<br><br>
 Come back tomorrow for another daily!
 {% endif %}
 <br><a href="{{ url_for('index') }}">Back to regular Worldsle!</a>

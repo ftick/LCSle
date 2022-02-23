@@ -12,7 +12,8 @@
 
 <h2>Worldsle</h2>
 <h3>A LoL Worlds Wordle-like by <a href="https://github.com/ftick">ftick</a></h3>
-I'm thinking of a Pro Player who competed at Worlds between {{minYear}} and {{maxYear}}. Guess who! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+I'm thinking of a Pro Player who's competed at Worlds between {{minYear}} and {{maxYear}}.
+Figure out who in {{attempts}} guesses! <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 
 <br><br>
 {% if data|length > 0 %}
@@ -75,11 +76,11 @@ You lost!
 {% if gameOver > 0 %}
 <div style="display: flex; align-items: center; flex-direction: column;">
   <div class="row-answer">
-    The secret player was 
-    <div class="tooltip" style="margin-left: 4px"><p class=guess><b>{{secret}}</b><br></p>
+    <h3>The secret player was </h3>
+    <div class="tooltip" style="margin-left: 4px;"><p class=guess style="font-size: larger;"><b>{{secret}}</b><br></p>
       <span class="tooltiptext">{{secretinfo}}</span>
     </div>
-    !
+    <h3>!</h3>
   </div>
 </div>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic|safe}}')" href="#">📄 Share</a>

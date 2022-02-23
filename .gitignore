@@ -1,7 +1,10 @@
 .env
 __pycache__
-daily.csv
+
+# folders
 elixir/year
 elixir/merge
+serverless
+
 lcsdex.txt
-worldsle
+daily.csv

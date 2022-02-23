@@ -21,7 +21,7 @@ def readDex(minyear=2011, maxyear=2021):
         with open(file_name, "w", encoding="utf-8") as write_file:
             write_file.writelines("record,name,year,debut,region,team,pos,gp,k\n")
             for entry in data:
-                write_file.writelines('{0},{1},{2},{3},{4},{5},{6},{7},{8}\n'.format(entry.record,entry.name,entry.year,entry.debut,entry.region,entry.team,entry.pos,entry.gp,entry.k))
+                write_file.writelines('{0},{1},{2},{3},{4},{5},{6},{7},{8}\n'.format(str(entry.record).rjust(11,'0'),entry.name,entry.year,entry.debut,entry.region,entry.team,entry.pos,entry.gp,entry.k))
         dex = np.recfromcsv(file_name, encoding="utf-8")
         dex = dex[(dex['year'] <= int(maxyear)) & (dex['year'] >= int(minyear))]
     return dex
@@ -33,9 +33,8 @@ def getPlayer(minyear=2011, maxyear=2021, daily=False):
         row = dex[dex['date'] == today]
         secret = row['player'][0]
     else:
-        dex = readDex(minyear=2011, maxyear=2021)
+        dex = readDex(minyear, maxyear)
         secret = np.random.choice(dex, 1)['name'][0]
-        print(secret)
     return secret
 
 def getPlayerList(minyear=2011, maxyear=2021):
@@ -56,11 +55,7 @@ def getHint(guess_str, secret_str, daily=False):
         guess = getPlayerInfo(guess_str)
         secret = getPlayerInfo(secret_str)
         hint = dict()
-        if not daily:
-            hint['Debut'] = '🟩' if guess["debut"] == secret["debut"] else '🔼' if guess["debut"] < secret["debut"] else '🔽'
-        else:
-            hint['Debut'] = '🟩' if guess["debut"] == secret["debut"] else '🟦'
-
+        hint['Debut'] = '🟩' if guess["debut"] == secret["debut"] else '🔼' if guess["debut"] < secret["debut"] else '🔽'
         hint['Region'] = '🟩' if guess["region"] == secret["region"] else '🟥'
         hint['Team'] = '🟩' if guess["team"] == secret["team"] else '🟥'
         hint['Role'] = '🟩' if guess["pos"] == secret["pos"] else '🟥'
@@ -76,6 +71,17 @@ def getHint(guess_str, secret_str, daily=False):
 
 def getHintMoji(hint):
     return "".join([val for x,val in hint.items()])
+
+def formatSecret(player):
+    # player = getPlayerInfo(name)
+    txt = f"{player['debut']} | "
+    txt += f"{player['region']} | "
+    txt += f"{player['team']} | "
+    txt += f"{player['pos']} | "
+    txt += f"{player['gp']} | "
+    txt += f"{player['k']}"
+
+    return txt
 
 def formatInfo(player):
     txt = f"<b>Worlds Debut:</b> {player['debut']}<br>"

@@ -1,4 +1,5 @@
 import json
+from this import d
 from worldsutils import *
 from flask import Flask, request, render_template, make_response, url_for, redirect
 from datetime import datetime, timedelta, date
@@ -38,10 +39,10 @@ def handleGameOver(previousGuesses, gameOver, secret, attempts, daily, minYear, 
     if not API_KEY or not API_STATS_URL:
         return None
     # Stat collecting: Sends guesses, secret player, remaining attempts and whether it's a daily attempt to stats endpoint.
-    message = json.dumps({"guesses":[x['Guess'] for x in previousGuesses], "result":gameOver, 
-                          "secret":secret, "attempts":attempts, "minYear":minYear, "maxYear":maxYear, "daily":daily, "timestamp":str(datetime.now())})
+    datax = {"guesses":[x['Guess'] for x in previousGuesses], "result":gameOver, 
+                          "secret":secret, "attempts":attempts, "minYear":minYear, "maxYear":maxYear, "daily":daily, "timestamp":str(datetime.now())}
 
-    return requests.post(API_STATS_URL, headers={"x-api-key":API_KEY}, json={"message":message})
+    return requests.post(API_STATS_URL, headers={"x-api-key":API_KEY, 'message': json.dumps(datax)})
 
 @app.route("/")
 def index():
@@ -64,7 +65,7 @@ def index():
         resp.set_cookie('max_year', f"{maxyear}")
         resp.set_cookie('secret', getPlayer(minyear=minyear, maxyear=maxyear))
 
-        guessesMap = {1:'5', 2:'5', 3:'6', 4:'6', 5:'7', 6:'7', 7:'8', 8:'8', 9:'9', 10:'9', 11:'10'}
+        guessesMap = {1:'6', 2:'7', 3:'8', 4:'8', 5:'8', 6:'8', 7:'8', 8:'8', 9:'9', 10:'9', 11:'9'}
 
         resp.set_cookie('attempts', guessesMap[maxyear-minyear+1])
         resp.set_cookie('total_attempts', guessesMap[maxyear-minyear+1])
@@ -92,8 +93,9 @@ def guess():
             previousGuesses.append(getHint(request.form['guess'], secret))
             attempts -= 1
         else:
+            x = formatSecret(getPlayerInfo(secret))
             return render_template('index.html', data=previousGuesses, gameOver=gameOver, minYear=minYear, maxYear=maxYear, player=getPlayerList(minyear=minYear, maxyear=maxYear), 
-                                    secret=secret, error=True, mosaic="", mosaic_names="", attempts=attempts)
+                                    secret=secret, secretinfo=x, error=True, mosaic="", mosaic_names="", attempts=attempts)
 
         gameOver = 1 if previousGuesses[-1]["name"] == 1 else 2 if attempts <= 0 else 0
         if(gameOver):
@@ -103,8 +105,10 @@ def guess():
     guesses = len(previousGuesses) if gameOver == 1 else 'X'
     mosaic = f"Worldsle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
     mosaic_names = f"Worldsle {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
+
+    x = formatSecret(getPlayerInfo(secret))
     resp = make_response(render_template('index.html', data=previousGuesses, gameOver=gameOver, minYear=minYear, maxYear=maxYear, player=getPlayerList(minyear=minYear, maxyear=maxYear), 
-                                          secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
+                                          secret=secret, secretinfo=x, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
 
     resp.set_cookie('game_record', json.dumps(previousGuesses))
     resp.set_cookie('attempts', str(attempts))
@@ -135,12 +139,13 @@ def daily():
         mosaic = f"Worldsle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
         mosaic_names = f"Worldsle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
 
+    x = formatSecret(getPlayerInfo(secret))
     return render_template("daily.html", data=previousGuesses, gameOver=gameOver, player=getPlayerList(), 
-                            secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts)
+                            secret=secret, secretinfo=x, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts)
 
 @app.route("/daily", methods=['POST'])
 def dailyGuess():
-    previousGuesses, gameOver, secret, attempts, minyear, maxyear = getCookieData(daily=True)
+    previousGuesses, gameOver, secret, attempts, minYear, maxYear = getCookieData(daily=True)
 
     if(not gameOver):
         if (hint := getHint(request.form['guess'], secret, daily=True)):
@@ -148,11 +153,11 @@ def dailyGuess():
             attempts -= 1
         else:
             mosaic = "\n".join([x['emoji'] for x in previousGuesses])
-            return render_template('daily.html', data=previousGuesses, gameOver=gameOver, player=getPlayerList(), secret=secret, error=True, mosaic=mosaic, attempts=attempts)
+            return render_template('daily.html', data=previousGuesses, gameOver=gameOver, player=getPlayerList(), secret=secret, secretinfo=formatInfo(getPlayerInfo(secret)), error=True, mosaic=mosaic, attempts=attempts)
 
         gameOver = 1 if previousGuesses[-1]["name"] == 1 else 2 if attempts <= 0 else 0
         if(gameOver):
-            handleGameOver(previousGuesses, gameOver, secret, attempts, True, minyear, maxyear)
+            handleGameOver(previousGuesses, gameOver, secret, attempts, True, minYear, maxYear)
 
     total_attempts = request.cookies.get('d_total_attempts')
     guesses = len(previousGuesses) if gameOver == 1 else 'X'
@@ -161,8 +166,9 @@ def dailyGuess():
     mosaic = f"Worldsle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji'] for x in previousGuesses])
     mosaic_names = f"Worldsle Daily {day} - {guesses}/{total_attempts}\\n\\n" +"\\n".join([x['emoji']+" "+x['Guess'] for x in previousGuesses])
 
+    x = formatSecret(getPlayerInfo(secret))
     resp = make_response(render_template('daily.html', data=previousGuesses, gameOver=gameOver, player=getPlayerList(), 
-                                          secret=secret, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
+                                          secret=secret, secretinfo=x, error=False, mosaic=mosaic, mosaic_names=mosaic_names, attempts=attempts))
                                           
     resp.set_cookie('d_game_record', json.dumps(previousGuesses))
     resp.set_cookie('d_attempts', str(attempts))

@@ -12,7 +12,7 @@
 
 <h2>Worldsle</h2>
 <h3>A LoL Worlds Wordle-like by <a href="https://github.com/ftick">ftick</a></h3>
-I'm thinking of a Worlds Player. Guess who! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
+I'm thinking of a Pro Player who competed at Worlds between {{minYear}} and {{maxYear}}. Guess who! You have {{attempts}} guesses. <div class="tooltip">Emoji Key<span class="tooltiptext">🟩: Correct guess<br>🟥: Incorrect Guess<br>🔼: Guessed too low<br>🔽: Guessed too high</span></div>
 
 <br><br>
 {% if data|length > 0 %}
@@ -66,7 +66,6 @@ Player not found!
   <input class="guess_input" type="submit" value="Submit">
 </form><br>
 {% endif %}
-
 {% if gameOver == 1 %}
 You won!
 {% endif %}
@@ -74,18 +73,26 @@ You won!
 You lost!
 {% endif %}
 {% if gameOver > 0 %}
-The secret player was <b>{{secret}}</b>!<br>
+<div style="display: flex; align-items: center; flex-direction: column;">
+  <div class="row-answer">
+    The secret player was 
+    <div class="tooltip" style="margin-left: 4px"><p class=guess><b>{{secret}}</b><br></p>
+      <span class="tooltiptext">{{secretinfo}}</span>
+    </div>
+    !
+  </div>
+</div>
 <a class="togglec" onclick="copyCurrentDay('{{mosaic|safe}}')" href="#">📄 Share</a>
-<a class="togglec" onclick="copyCurrentDay('{{mosaic_names|safe}}')" href="#">👀 Share w/names</a>
+<a class="togglec" onclick="copyCurrentDay('{{mosaic_names|safe}}')" href="#">👀 Share w/names</a><br>
 {% endif %}
 
 <form action="{{ url_for('index', clear=True) }}" method="GET">
   <input type="hidden" name="clear" value="1" /> 
-  <button class="togglec" type="submit" name="gen" value="8">▶️ New Game</button><br>
+  <button class="togglec" type="submit" name="Gen" value="8">▶️ New Game</button><br>
   <label for="quantity">Guess Players from Worlds</label>
-  <input class="mg_input" type="number" id="minyear" name="minyear" min="2011" max="2021" value="{{minyear}}" oninput="validity.valid||(value='');">
+  <input class="mg_input" type="number" id="minyear" name="minyear" min="2011" max="2021" value="{{minYear}}" oninput="validity.valid||(value='');">
   <label for="quantity">to</label>
-  <input class="mg_input" type="number" id="maxyear" name="maxyear" min="2011" max="2021" value="{{maxyear}}" oninput="validity.valid||(value='');"><br><br>
+  <input class="mg_input" type="number" id="maxyear" name="maxyear" min="2011" max="2021" value="{{maxYear}}" oninput="validity.valid||(value='');"><br><br>
 </form>
 <br><a href="{{ url_for('daily') }}">Try Daily Worldsle!</a>
 

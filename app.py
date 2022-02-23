@@ -176,4 +176,6 @@ def dailyGuess():
     return resp
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=True)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+    # app.run(debug=True, use_reloader=True)

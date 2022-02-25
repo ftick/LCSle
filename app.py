@@ -4,13 +4,12 @@ from worldsutils import *
 from flask import Flask, request, render_template, make_response, url_for, redirect
 from datetime import datetime, timedelta, date
 import requests
-
-from decouple import config
+import os
 
 app = Flask(__name__)
 
-API_KEY = config('API_KEY')
-API_STATS_URL = config('API_STATS_URL')
+API_KEY = os.environ['API_KEY']
+API_STATS_URL = os.environ['API_STATS_URL']
 
 def getCookieData(daily=""):
     prefix = ""
@@ -177,5 +176,5 @@ def dailyGuess():
 
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="0.0.0.0", port=8080)
+    serve(app, host="0.0.0.0", port=5000)
     # app.run(debug=True, use_reloader=True)

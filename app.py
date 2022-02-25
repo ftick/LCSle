@@ -8,8 +8,8 @@ import os
 
 app = Flask(__name__)
 
-API_KEY = os.environ['API_KEY']
-API_STATS_URL = os.environ['API_STATS_URL']
+API_KEY = os.getenv('API_KEY')
+API_STATS_URL = os.getenv('API_STATS_URL')
 
 def getCookieData(daily=""):
     prefix = ""
@@ -176,5 +176,5 @@ def dailyGuess():
 
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="0.0.0.0", port=5000)
+    serve(app, host="0.0.0.0", port=80)
     # app.run(debug=True, use_reloader=True)

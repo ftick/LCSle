@@ -4,6 +4,9 @@ A LoL Worlds Wordle-like, found at [ftick/Worldsle](https://github.com/ftick/Wor
 Player data based on [Oracle's Elixir's dataset](https://oracleselixir.com/stats/players/byTournament).
 
 Pull requests welcome!
+
+---
+
 ### Running Locally
 #### Requirements
 * A Python 3.8+ environment
@@ -16,6 +19,8 @@ Pull requests welcome!
 4. Execute `pip install -r requirements.txt` to install Python dependencies.
 5. Run the application with `flask run` and enter the specified `localhost` URL.
 
+---
+
 ### Deploying to Vercel
 #### Requirements
 * Make sure you can run the app locally first.
@@ -26,7 +31,7 @@ Pull requests welcome!
 1. Check the `requirements.txt` file for anything you might want to modify.
 2. Run `vercel` to initiate a project
 ```
-? Set up and deploy “~/path/to/repo/wordlsle/venv”? [Y/n] y
+? Set up and deploy “~/path/to/repo/venv”? [Y/n] y
 ? Which scope do you want to deploy to? username
 ? Link to existing project? [y/N] n
 ? What’s your project’s name? venv

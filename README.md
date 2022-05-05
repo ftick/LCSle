@@ -1,5 +1,5 @@
 # Worldsle
-A LoL Worlds Wordle-like, found at [fake link](https://github.com/ftick/Worldsle)
+A LoL Worlds Wordle-like, found at [ftick/Worldsle](https://github.com/ftick/Worldsle)
 
 Player data based on [Oracle's Elixir's dataset](https://oracleselixir.com/stats/players/byTournament).
 
@@ -10,20 +10,19 @@ Pull requests welcome!
 
 #### Running
 1. Clone the repo and navigate inside the newly cloned directory.
-2. Rename `fake-daily.csv` to `daily.csv`: `mv fake-daily.csv daily.csv`
-3. Execute `pip install -r requirements.txt` to install Python dependencies.
-4. Run the application with `python app.py` and enter the specified `localhost` URL.
+2. Run `. venv/Scripts/activate` to activate the virtual environment
+3. Navigate into the venv folder: `cd venv`
+3. Rename `fake-daily.csv` to `daily.csv`: `mv fake-daily.csv daily.csv`
+4. Execute `pip install -r requirements.txt` to install Python dependencies.
+5. Run the application with `flask run` and enter the specified `localhost` URL.
 
-### Deploying to AWS
+### Deploying to Vercel
 #### Requirements
 * Make sure you can run the app locally first.
-* An AWS account.
-* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed & setup to use your AWS account.
-* [Serverless](https://serverless.com/framework/docs/providers/aws/guide/quick-start/) installed & setup.
+* A [Vercel](https://vercel.com) account.
+* [Vercel CLI](https://vercel.com/cli) installed & setup.
 
 #### Running
-1. Check the `serverless.yaml` file for anything you might want to modify (mainly make sure the listed Python version matches your local Python version).
-2. Install the required plugins into your cloned directory: `npm install --save serverless-wsgi serverless-python-requirements serverless-apigw-binary`.
-3. Execute `sls deploy` and wait.
+
 
 Execute `sls remove` to destroy the instance and all associated AWS resources.

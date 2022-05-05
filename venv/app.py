@@ -8,6 +8,7 @@ import os
 
 app = Flask(__name__)
 
+DEBUG_FLAG = False
 API_KEY = os.getenv('API_KEY')
 API_STATS_URL = os.getenv('API_STATS_URL')
 
@@ -175,6 +176,4 @@ def dailyGuess():
     return resp
 
 if __name__ == "__main__":
-    # from waitress import serve
-    # serve(app, host="0.0.0.0", port=80)
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=DEBUG_FLAG, use_reloader=True)
